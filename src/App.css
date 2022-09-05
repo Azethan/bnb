@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 900px;
+}
+
+/* 
+COMPONENT: Navigation Bar Style
+*/
+
+nav {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+/*Navbar links*/
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline 0.15rem var(--brown);
+  text-underline-offset: 0.3rem;
+}
+
+nav a:active {
+  text-decoration: underline 0.15rem var(--light-brown);
+  text-underline-offset: 0.3rem;
+}
+
+/*Navbar Title and Logo*/
+.site-title {
+  font-size: 2rem;
+  font-family: 'Aladin', cursive;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+nav img {
+  height: 1.5rem;
+  width: 1.2rem;
+  margin: 1rem 0.7rem 0 0;
+}
+
+
+/* 
+COMPONENT: Footer Style 
+*/
+
+.main-footer {
+  background-color: var(--light-brown);
+  color: var(--white);
+  width: 100%;
+  padding: 1rem 15% 2rem 15%;
+
+  bottom: 0;
+  left: 0;
+}
+
+.main-footer {
+  display: flex;
+  flex: wrap;
+  justify-content: space-evenly;
+}
+
+/*Container 1 styles: Footer logo and company title*/
+.container1 {
+  width: 40%;
+  font-size: 0.9rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-family: 'Aladin', cursive;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 0.5rem;
+}
+
+.container1 img {
+  height: 1.5rem;
+  width: 1.2rem;
+  margin: 1rem 0.7rem 0 0;
+}
+
+.us {
+  height: 25px;
+  width: 30px;
+}
+
+.container1 address {
+  display: flex;
+  align-items: center;
+}
+
+
+/*Container 2 styles: Site Links*/
+footer ul {
+  list-style: none;
+}
+
+.container2 a {
+  color: inherit;
+  text-decoration: underline 0.1rem var(--white);
+  text-underline-offset: 0.2rem;
+}
+
+.container2 a:hover {
+  text-decoration: underline 0.15rem var(--brown);
+}
+
+.container2 li {
+  padding: 0.15rem;
+}
+
+.container2 h2 {
+  font-size: 1.3rem;
+}
+
+/*Container 3 styles: Social Links and Location*/
+.container3 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container3 a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.fb {
+  height: 25px;
+  width: 15px;
+  padding-left: 0.2rem;
+}
+
+.ig {
+  height: 25px;
+  width: 25px;
+}
+
+/*copyright content*/
+.irrelevant-bits {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0.2rem;
+  bottom: 0;
+  width: 100%;
+}
